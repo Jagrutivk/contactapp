@@ -1,0 +1,25 @@
+.main-navbar {
+  position: fixed;
+  top: 0;
+  height: 10vh;
+  width: 100vw;
+  border: 1px solid rgb(4, 4, 95);
+  box-shadow: 0 2px 8px rgb(4, 4, 95);
+}
+
+.navbar-items {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: end;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  margin: 2rem;
+  color: rgb(4, 4, 95);
+}

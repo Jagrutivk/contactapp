@@ -1,0 +1,21 @@
+.home-main-container {
+  position: fixed;
+  top: 12vh;
+  height: 82vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+
+.img-container {
+  height: 80vh;
+  width: 80vw;
+  border: 1px solid rgb(4, 4, 95);
+  box-shadow: 0 2px 8px rgb(4, 4, 95);
+}
+
+img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
