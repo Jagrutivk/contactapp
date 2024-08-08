@@ -4,7 +4,7 @@ import "./contactList.css";
 function ContactList({ data }) {
   return (
     <div className="contactList-container">
-      {data.map((contact) => (
+      {data?.map((contact) => (
         <div key={contact.id} className="contact-card-box">
           <h2>
             {contact.firstName} {contact.lastName}

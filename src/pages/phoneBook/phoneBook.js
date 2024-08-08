@@ -80,7 +80,7 @@ function PhoneBook() {
 
   const fetchData = async () => {
     try {
-      const response = await fetch("http://localhost:3000/users");
+      const response = await fetch("http://localhost:5001/users");
       if (!response.ok) {
         throw new Error("Network response was not ok");
       }
@@ -99,7 +99,7 @@ function PhoneBook() {
 
   const handleFormSubmit = async (formData) => {
     try {
-      const response = await fetch("http://localhost:3000/users", {
+      const response = await fetch("http://localhost:5001/users", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
