@@ -5,64 +5,47 @@ function CreateContactForm() {
   return (
     <div>
       <form>
-        <ul>
-          <li>
-            <label>First Name : </label>
-            <input type="text"></input>
-          </li>
-          <li>
-            <label>Last Name : </label>
-            <input type="text"></input>
-          </li>
-          <li>
-            <label>DOB : </label>
-            <input type="number"></input>
-          </li>
-          <li>
-            <label>Gender : </label>
-            <input type="text"></input>
-          </li>
-          <li>
-            <label>Email : </label>
-            <input type="email"></input>
-          </li>
-          <li>
-            <label>Phone No. : </label>
-            <input type="number"></input>
-          </li>
-          <li>
-            <label>Street Address : </label>
-            <input type="text"></input>
-          </li>
-          <li>
-            <label>Street Address : </label>
-            <input type="text"></input>
-          </li>
-          <li>
-            <label>City : </label>
-            <input type="text"></input>
-          </li>
-          <li>
-            <label>State : </label>
-            <input type="text"></input>
-          </li>
-          <li>
-            <label>Country : </label>
-            <input type="text"></input>
-          </li>
-          <li>
-            <label>Zip Code : </label>
-            <input type="number"></input>
-          </li>
-          <li>
-            <label>Social Media Link : </label>
-            <input type="url"></input>
-          </li>
-          <li>
-            <label>Work: </label>
-            <input type="text"></input>
-          </li>
-        </ul>
+        <label>First Name : </label>
+        <input type="text"></input>
+
+        <label>Last Name : </label>
+        <input type="text"></input>
+
+        <label>DOB : </label>
+        <input type="number"></input>
+
+        <label>Gender : </label>
+        <input type="text"></input>
+
+        <label>Email : </label>
+        <input type="email"></input>
+
+        <label>Phone No. : </label>
+        <input type="number"></input>
+
+        <label>Street Address : </label>
+        <input type="text"></input>
+
+        <label>Street Address : </label>
+        <input type="text"></input>
+
+        <label>City : </label>
+        <input type="text"></input>
+
+        <label>State : </label>
+        <input type="text"></input>
+
+        <label>Country : </label>
+        <input type="text"></input>
+
+        <label>Zip Code : </label>
+        <input type="number"></input>
+
+        <label>Social Media Link : </label>
+        <input type="url"></input>
+
+        <label>Work: </label>
+        <input type="text"></input>
       </form>
     </div>
   );
