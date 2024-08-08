@@ -1,6 +1,42 @@
+
+/* src/contactList.css */
 .contactList-container {
   position: relative;
   width: 72%;
-  left: 2%;
-  border: 1px solid rgb(4, 4, 95);
+  display: grid;
+  grid-template-columns: 1fr; /* One column by default */
+  gap: .5rem;
+  padding: 1rem;
+}
+
+.contact-card-box {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: .5rem;
+  padding: .5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.contact-card-box h2 {
+  margin: 0 0 0.5rem 0;
+}
+
+.contact-card-box p {
+  margin: 0.25rem 0;
+}
+
+.contact-card-box a {
+  color: #1a0dab;
+  text-decoration: none;
+}
+
+.contact-card-box a:hover {
+  text-decoration: underline;
+}
+
+/* Media query for larger screens */
+@media (min-width: 600px) {
+  .contactList-container {
+    grid-template-columns: repeat(2, 1fr); /* Two columns */
+  }
 }

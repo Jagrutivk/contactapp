@@ -1,51 +1,193 @@
-import React from "react";
+import React, { useState } from "react";
 import "./createContactForm.css";
 
-function CreateContactForm() {
+function CreateContactForm({ onSubmit }) {
+  const [formData, setFormData] = useState({
+    firstName: "",
+    lastName: "",
+    dob: "",
+    gender: "",
+    email: "",
+    phoneNo: "",
+    streetAddress1: "",
+    streetAddress2: "",
+    city: "",
+    state: "",
+    country: "",
+    zipCode: "",
+    socialMediaLink: "",
+    work: "",
+  });
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prevData) => ({
+      ...prevData,
+      [name]: value,
+    }));
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    onSubmit(formData);
+  };
+
   return (
-    <div>
-      <form>
-        <label>First Name : </label>
-        <input type="text"></input>
+    <div className="contact-form-area">
+      <form onSubmit={handleSubmit} className="create-contact-form">
+        <label>
+          First Name:
+          <input
+            type="text"
+            name="firstName"
+            value={formData.firstName}
+            onChange={handleChange}
+            required
+          />
+        </label>
 
-        <label>Last Name : </label>
-        <input type="text"></input>
+        <label>
+          Last Name:
+          <input
+            type="text"
+            name="lastName"
+            value={formData.lastName}
+            onChange={handleChange}
+            required
+          />
+        </label>
 
-        <label>DOB : </label>
-        <input type="number"></input>
+        <label>
+          DOB:
+          <input
+            type="date"
+            name="dob"
+            value={formData.dob}
+            onChange={handleChange}
+            required
+          />
+        </label>
 
-        <label>Gender : </label>
-        <input type="text"></input>
+        <label>
+          Gender:
+          <input
+            type="text"
+            name="gender"
+            value={formData.gender}
+            onChange={handleChange}
+            required
+          />
+        </label>
 
-        <label>Email : </label>
-        <input type="email"></input>
+        <label>
+          Email:
+          <input
+            type="email"
+            name="email"
+            value={formData.email}
+            onChange={handleChange}
+            required
+          />
+        </label>
 
-        <label>Phone No. : </label>
-        <input type="number"></input>
+        <label>
+          Phone No.:
+          <input
+            type="tel"
+            name="phoneNo"
+            value={formData.phoneNo}
+            onChange={handleChange}
+            required
+          />
+        </label>
 
-        <label>Street Address : </label>
-        <input type="text"></input>
+        <label>
+          Street Address 1:
+          <input
+            type="text"
+            name="streetAddress1"
+            value={formData.streetAddress1}
+            onChange={handleChange}
+            required
+          />
+        </label>
 
-        <label>Street Address : </label>
-        <input type="text"></input>
+        <label>
+          Street Address 2:
+          <input
+            type="text"
+            name="streetAddress2"
+            value={formData.streetAddress2}
+            onChange={handleChange}
+          />
+        </label>
 
-        <label>City : </label>
-        <input type="text"></input>
+        <label>
+          City:
+          <input
+            type="text"
+            name="city"
+            value={formData.city}
+            onChange={handleChange}
+            required
+          />
+        </label>
 
-        <label>State : </label>
-        <input type="text"></input>
+        <label>
+          State:
+          <input
+            type="text"
+            name="state"
+            value={formData.state}
+            onChange={handleChange}
+            required
+          />
+        </label>
 
-        <label>Country : </label>
-        <input type="text"></input>
+        <label>
+          Country:
+          <input
+            type="text"
+            name="country"
+            value={formData.country}
+            onChange={handleChange}
+            required
+          />
+        </label>
 
-        <label>Zip Code : </label>
-        <input type="number"></input>
+        <label>
+          Zip Code:
+          <input
+            type="text"
+            name="zipCode"
+            value={formData.zipCode}
+            onChange={handleChange}
+            required
+          />
+        </label>
 
-        <label>Social Media Link : </label>
-        <input type="url"></input>
+        <label>
+          Social Media Link:
+          <input
+            type="url"
+            name="socialMediaLink"
+            value={formData.socialMediaLink}
+            onChange={handleChange}
+          />
+        </label>
 
-        <label>Work: </label>
-        <input type="text"></input>
+        <label>
+          Work:
+          <input
+            type="text"
+            name="work"
+            value={formData.work}
+            onChange={handleChange}
+            required
+          />
+        </label>
+
+        <button type="submit">Submit</button>
       </form>
     </div>
   );

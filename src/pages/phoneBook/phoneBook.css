@@ -1,8 +1,9 @@
 .phonebook-container {
-  position: relative;
-  top: 12vh;
-  height: 82vh;
-  width: 100vw;
+  /* position: relative; */
+
+  min-height: 100vh;
+  width: 100%;
   display: flex;
   flex-direction: row;
+  gap: .5rem;
 }

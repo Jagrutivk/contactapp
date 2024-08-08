@@ -1,0 +1,41 @@
+/* src/createContactForm.css */
+.contact-form-area {
+    width: 50%;
+}
+
+.create-contact-form {
+    max-width: 50rem;
+    margin: 0 auto;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+  }
+  
+  .create-contact-form label {
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+  
+  .create-contact-form input {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .create-contact-form button {
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  .create-contact-form button:hover {
+    background-color: #0056b3;
+  }
+  
