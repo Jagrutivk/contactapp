@@ -12,31 +12,14 @@ function ContactList({ data }) {
           <p>
             <strong>Date of Birth:</strong> {contact.dob}
           </p>
-          <p>
-            <strong>Gender:</strong> {contact.gender}
-          </p>
+
           <p>
             <strong>Email:</strong> {contact.email}
           </p>
           <p>
             <strong>Phone:</strong> {contact.phoneNo}
           </p>
-          <p>
-            <strong>Address:</strong> {contact.streetAddress1},{" "}
-            {contact.streetAddress2 ? `${contact.streetAddress2},` : ""}{" "}
-            {contact.city}, {contact.state}, {contact.zipCode},{" "}
-            {contact.country}
-          </p>
-          <p>
-            <strong>Social Media:</strong>{" "}
-            <a
-              href={contact.socialMediaLink}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              {contact.socialMediaLink}
-            </a>
-          </p>
+
           <p>
             <strong>Work:</strong> {contact.work}
           </p>

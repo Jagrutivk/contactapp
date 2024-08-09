@@ -6,16 +6,8 @@ function CreateContactForm({ onSubmit }) {
     firstName: "",
     lastName: "",
     dob: "",
-    gender: "",
     email: "",
     phoneNo: "",
-    streetAddress1: "",
-    streetAddress2: "",
-    city: "",
-    state: "",
-    country: "",
-    zipCode: "",
-    socialMediaLink: "",
     work: "",
   });
 
@@ -69,17 +61,6 @@ function CreateContactForm({ onSubmit }) {
         </label>
 
         <label>
-          Gender:
-          <input
-            type="text"
-            name="gender"
-            value={formData.gender}
-            onChange={handleChange}
-            required
-          />
-        </label>
-
-        <label>
           Email:
           <input
             type="email"
@@ -98,81 +79,6 @@ function CreateContactForm({ onSubmit }) {
             value={formData.phoneNo}
             onChange={handleChange}
             required
-          />
-        </label>
-
-        <label>
-          Street Address 1:
-          <input
-            type="text"
-            name="streetAddress1"
-            value={formData.streetAddress1}
-            onChange={handleChange}
-            required
-          />
-        </label>
-
-        <label>
-          Street Address 2:
-          <input
-            type="text"
-            name="streetAddress2"
-            value={formData.streetAddress2}
-            onChange={handleChange}
-          />
-        </label>
-
-        <label>
-          City:
-          <input
-            type="text"
-            name="city"
-            value={formData.city}
-            onChange={handleChange}
-            required
-          />
-        </label>
-
-        <label>
-          State:
-          <input
-            type="text"
-            name="state"
-            value={formData.state}
-            onChange={handleChange}
-            required
-          />
-        </label>
-
-        <label>
-          Country:
-          <input
-            type="text"
-            name="country"
-            value={formData.country}
-            onChange={handleChange}
-            required
-          />
-        </label>
-
-        <label>
-          Zip Code:
-          <input
-            type="text"
-            name="zipCode"
-            value={formData.zipCode}
-            onChange={handleChange}
-            required
-          />
-        </label>
-
-        <label>
-          Social Media Link:
-          <input
-            type="url"
-            name="socialMediaLink"
-            value={formData.socialMediaLink}
-            onChange={handleChange}
           />
         </label>
 
