@@ -1,69 +1,180 @@
+// import React from "react";
+// import "./createContactForm.css";
+
+// function CreateContactForm() {
+//   return (
+//     <div className="form-main-container">
+//       <h2>Contact Form</h2>
+//       <form className="form-container">
+//         <div className="form-section">
+//           <div className="form-group">
+//             <label>First Name : </label>
+//             <input type="text"></input>
+//           </div>
+//           <div className="form-group">
+//             <label>Last Name : </label>
+//             <input type="text"></input>{" "}
+//           </div>
+
+//           <div className="form-group">
+//             <label>DOB : </label>
+//             <input type="number"></input>{" "}
+//           </div>
+
+//           <div className="form-group">
+//             <label>Gender : </label>
+//             <input type="text"></input>{" "}
+//           </div>
+
+//           <div className="form-group">
+//             <label>Email : </label>
+//             <input type="email"></input>{" "}
+//           </div>
+
+//           <div className="form-group">
+//             <label>Contact No. : </label>
+//             <input type="number"></input>{" "}
+//           </div>
+//           <div className="form-group">
+//             <label>Profession: </label>
+//             <input type="text"></input>{" "}
+//           </div>
+//         </div>
+//         <div className="form-section">
+//           <div className="form-group">
+//             <label>Street Address : </label>
+//             <input type="text"></input>{" "}
+//           </div>
+
+//           <div className="form-group">
+//             <label>Street Address : </label>
+//             <input type="text"></input>{" "}
+//           </div>
+
+//           <div className="form-group">
+//             <label>City : </label>
+//             <input type="text"></input>{" "}
+//           </div>
+
+//           <div className="form-group">
+//             <label>State : </label>
+//             <input type="text"></input>{" "}
+//           </div>
+
+//           <div className="form-group">
+//             <label>Country : </label>
+//             <input type="text"></input>{" "}
+//           </div>
+
+//           <div className="form-group">
+//             <label>Zip Code : </label>
+//             <input type="number"></input>{" "}
+//           </div>
+
+//           <div className="form-group">
+//             <label>Social Media Link : </label>
+//             <input type="url"></input>{" "}
+//           </div>
+//         </div>
+//       </form>
+//     </div>
+//   );
+// }
+
+// export default CreateContactForm;
+
 import React from "react";
 import "./createContactForm.css";
 
 function CreateContactForm() {
   return (
-    <div>
-      <form>
-        <ul>
-          <li>
-            <label>First Name : </label>
-            <input type="text"></input>
-          </li>
-          <li>
-            <label>Last Name : </label>
-            <input type="text"></input>
-          </li>
-          <li>
-            <label>DOB : </label>
-            <input type="number"></input>
-          </li>
-          <li>
-            <label>Gender : </label>
-            <input type="text"></input>
-          </li>
-          <li>
-            <label>Email : </label>
-            <input type="email"></input>
-          </li>
-          <li>
-            <label>Phone No. : </label>
-            <input type="number"></input>
-          </li>
-          <li>
-            <label>Street Address : </label>
-            <input type="text"></input>
-          </li>
-          <li>
-            <label>Street Address : </label>
-            <input type="text"></input>
-          </li>
-          <li>
-            <label>City : </label>
-            <input type="text"></input>
-          </li>
-          <li>
-            <label>State : </label>
-            <input type="text"></input>
-          </li>
-          <li>
-            <label>Country : </label>
-            <input type="text"></input>
-          </li>
-          <li>
-            <label>Zip Code : </label>
-            <input type="number"></input>
-          </li>
-          <li>
-            <label>Social Media Link : </label>
-            <input type="url"></input>
-          </li>
-          <li>
-            <label>Work: </label>
-            <input type="text"></input>
-          </li>
-        </ul>
-      </form>
+    <div className="form-main-container">
+      <div className="card">
+        <div className="card-header">
+          <h3>Contact Form</h3>
+        </div>
+
+        <form className="card-body">
+          <div className="form-section">
+            <div className="form-group">
+              <label>First Name : </label>
+              <input type="text"></input>
+            </div>
+
+            <div className="form-group">
+              <label>Last Name : </label>
+              <input type="text"></input>
+            </div>
+
+            <div className="form-group">
+              <label>DOB : </label>
+              <input type="number"></input>
+            </div>
+
+            <div className="form-group">
+              <label>Gender : </label>
+              <input type="text"></input>
+            </div>
+
+            <div className="form-group">
+              <label>Email : </label>
+              <input type="email"></input>
+            </div>
+
+            <div className="form-group">
+              <label>Contact No. : </label>
+              <input type="number"></input>
+            </div>
+
+            <div className="form-group">
+              <label>Profession: </label>
+              <input type="text"></input>
+            </div>
+          </div>
+
+          <div className="form-section">
+            <div className="form-group">
+              <label>Street Address : </label>
+              <input type="text"></input>
+            </div>
+
+            <div className="form-group">
+              <label>Street Address : </label>
+              <input type="text"></input>
+            </div>
+
+            <div className="form-group">
+              <label>City : </label>
+              <input type="text"></input>
+            </div>
+
+            <div className="form-group">
+              <label>State : </label>
+              <input type="text"></input>
+            </div>
+
+            <div className="form-group">
+              <label>Country : </label>
+              <input type="text"></input>
+            </div>
+
+            <div className="form-group">
+              <label>Zip Code : </label>
+              <input type="number"></input>
+            </div>
+
+            <div className="form-group">
+              <label>Social Media Link : </label>
+              <input type="url"></input>
+            </div>
+          </div>
+        </form>
+
+        <div className="card-footer">
+          <button className="danger"> Reset </button>
+          <button className="primary"> Submit </button>
+        </div>
+      </div>
     </div>
   );
 }

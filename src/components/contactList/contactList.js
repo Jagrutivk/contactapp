@@ -1,11 +1,50 @@
 import React from "react";
 import "./contactList.css";
-import CreateContactForm from "../form/createContactForm";
 
 function ContactList() {
   return (
     <div className="contactList-container">
-      <CreateContactForm />
+      {/* Display contact list */}
+      <div className="card2">
+        <div className="card-header2"></div>
+        <div className="card-body2"></div>
+        <div className="card-footer2"></div>
+      </div>
+      <div className="card2">
+        <div className="card-header2"></div>
+        <div className="card-body2"></div>
+        <div className="card-footer2"></div>
+      </div>
+      <div className="card2">
+        <div className="card-header2"></div>
+        <div className="card-body2"></div>
+        <div className="card-footer2"></div>
+      </div>
+      <div className="card2">
+        <div className="card-header2"></div>
+        <div className="card-body2"></div>
+        <div className="card-footer2"></div>
+      </div>
+      <div className="card2">
+        <div className="card-header2"></div>
+        <div className="card-body2"></div>
+        <div className="card-footer2"></div>
+      </div>
+      <div className="card2">
+        <div className="card-header2"></div>
+        <div className="card-body2"></div>
+        <div className="card-footer2"></div>
+      </div>
+      <div className="card2">
+        <div className="card-header2"></div>
+        <div className="card-body2"></div>
+        <div className="card-footer2"></div>
+      </div>
+      <div className="card2">
+        <div className="card-header2"></div>
+        <div className="card-body2"></div>
+        <div className="card-footer2"></div>
+      </div>
     </div>
   );
 }

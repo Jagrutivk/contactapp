@@ -1,0 +1,82 @@
+.form-main-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 82vh;
+  width: 70vw;
+  box-shadow: 1px 5px 9px rgb(4, 4, 95);
+  border: 1px solid rgb(4, 4, 95);
+}
+
+.card {
+  width: 100%;
+  height: 100%;
+}
+
+.card-header {
+  height: 10%;
+  width: 100%;
+  text-align: center;
+  border-bottom: 2px solid rgb(4, 4, 95);
+  color: rgb(4, 4, 95);
+}
+
+.card h3 {
+  margin: 0;
+}
+
+.card-body {
+  width: inherit;
+  height: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.form-section {
+  width: 40%;
+  padding: 1rem;
+}
+.form-group {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0.5rem;
+  color: rgb(4, 4, 95);
+  font-weight: 500;
+}
+
+.form-group
+  input[type="text"]
+  input[type="number"]
+  input[type="email"]
+  input[type="url"] {
+  width: 100%;
+}
+
+.card-footer {
+  width: 100%;
+  height: 10%;
+  border-top: 2px solid rgb(4, 4, 95);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.primary {
+  background-color: #007bff;
+  color: white;
+  padding: 0.3rem;
+  border: 3px solid #007bff;
+  border-radius: 0.5rem;
+}
+
+.danger {
+  background-color: rgb(186, 10, 10);
+  color: white;
+  padding: 0.3rem;
+  border: 3px solid rgb(186, 10, 10);
+  border-radius: 0.5rem;
+}
