@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./phoneBook.css";
 import Sidebar from "../../components/sidebar/sidebar";
 import CreateContactForm from "../../components/form/createContactForm";
+import CreateContactForm from "../../components/form/createContactForm";
 import ContactList from "../../components/contactList/contactList";
 
 function PhoneBook() {

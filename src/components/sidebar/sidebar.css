@@ -1,7 +1,6 @@
 .sidebar-container {
-  position: relative;
+
   width: 25%;
-  left: 1%;
   background-color: rgb(4, 4, 95);
   border: 1px solid rgb(4, 4, 95);
 }
@@ -14,15 +13,13 @@
 
 .search-div {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
+  height: 2rem;
+  padding: .5rem;
 }
 .search-form {
-  /* width: 100%; */
-  /* display: flex;
-  flex-direction: column;
-  align-items: center; */
+  width: 100%; 
+   display: flex;
+  justify-content: center;
 }
 
 .search-form input[type="text"] {
@@ -30,7 +27,8 @@
   border-radius: 0.5rem;
   border: 1px solid rgb(4, 4, 95);
   background-color: white;
-  margin: 0.4rem;
+  width: 100%;
+
 }
 
 .primary-button {

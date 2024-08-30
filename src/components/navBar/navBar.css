@@ -1,10 +1,10 @@
 .main-navbar {
-  position: fixed;
+  position: sticky;
+  z-index: 999;
   top: 0;
   height: 10vh;
-  width: 100vw;
-  border: 1px solid rgb(4, 4, 95);
-  box-shadow: 0 2px 8px rgb(4, 4, 95);
+  width: 100%;
+  background-color: navy;
 }
 
 .navbar-items {
@@ -21,5 +21,7 @@ ul {
   flex-direction: row;
   gap: 2rem;
   margin: 2rem;
-  color: rgb(4, 4, 95);
+  color: white;
+  font-weight: 500;
 }
+

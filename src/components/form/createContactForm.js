@@ -86,7 +86,29 @@
 import React from "react";
 import "./createContactForm.css";
 
-function CreateContactForm() {
+function CreateContactForm({ onSubmit }) {
+  const [formData, setFormData] = useState({
+    firstName: "",
+    lastName: "",
+    dob: "",
+    email: "",
+    phoneNo: "",
+    work: "",
+  });
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prevData) => ({
+      ...prevData,
+      [name]: value,
+    }));
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    onSubmit(formData);
+  };
+
   return (
     <div className="form-main-container">
       <div className="card">
