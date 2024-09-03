@@ -1,7 +1,7 @@
 import React from "react";
 import "./contactList.css";
 
-function ContactList({ data }) {
+function ContactList() {
   return (
     <div className="contactList-container">
       {/* Display contact list */}
