@@ -17,7 +17,9 @@
 .card-header {
   height: 10%;
   width: 100%;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border-bottom: 2px solid rgb(4, 4, 95);
   color: rgb(4, 4, 95);
 }
